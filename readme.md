@@ -2,7 +2,7 @@
 
 ## Description
 
-Barebones Base Theme is a nearly blank WordPress theme meant to be used as a starting point for custom WordPress sites. The theme comes with almost nothing except a rudimentary HTML skeleton and Bootstrap 4 pre-installed. It uses [Laravel Mix](https://github.com/JeffreyWay/laravel-mix), a wrapper around Webpack, to handle JavaScript and SASS compilation with hot reloading.
+Barebones Base Theme is a nearly blank WordPress theme meant to be used as a starting point for custom WordPress sites. The theme comes with almost nothing except a rudimentary HTML skeleton and Bootstrap 4 pre-installed. It uses [Laravel Mix](https://github.com/JeffreyWay/laravel-mix), a wrapper around Webpack, to handle JavaScript and SASS compilation.
 
 I created this base theme because I wanted to be able to start writing a custom theme extremely quickly, without having to rip out all of the parts I don't need. I started this theme with [Underscores](https://github.com/Automattic/_s) and tore out most of it.
 
