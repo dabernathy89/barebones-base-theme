@@ -15,12 +15,20 @@ require('dotenv').config();
 // You can set up a `.env` file in your project root (see `.env.sample`) or just override the default proxy URL here.
 let proxy_url = process.env.BROWSERSYNC_PROXY_URL || 'local.wordpress.dev';
 
-mix.autoload({
+mix.setPublicPath('./')
+    .autoload({
         'popper.js/dist/umd/popper.js': ['Popper']
     })
-    .js('js/main.js', 'js/build/')
-    .sass('sass/style.scss', 'css/')
-    .setPublicPath('./')
+    .js(['js/main.js'], 'js/build/bundle.js')
+    // If you need multiple JavaScript sources:
+    // .js(
+    //     [
+    //         'js/main.js',
+    //         'path/to/some/other/javascript'
+    //     ],
+    //     'js/build/bundle.js'
+    // )
+    .standaloneSass('sass/style.scss', 'css/')
     .sourceMaps()
     .browserSync({
         proxy: proxy_url,
